@@ -2,6 +2,13 @@
 <html lang="en">
     <head>
         <script>
+            class Laynol extends HTMLElement{
+                connectedCallback(){
+                    this.innerHTML = "Laynol was here";
+                }
+            }
+
+            customElements.define("x-laynol", Laynol);
         </script>
     </head>
     <body>
